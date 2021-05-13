@@ -88,7 +88,7 @@ Esta aplicación tendra dos componentes:
 
 El enrutamiento le permite mostrar vistas específicas de su aplicación según la ruta de la URL.
 Para agregar esta funcionalidad a su aplicación de ejemplo, necesita actualizar el archivo `app.module.ts` para usar el módulo,` RouterModule`.
-Importa este módulo desde `@angular/enrutador`.
+Importa este módulo desde `@angular/router`.
 
 1. Desde su editor de código, abra el archivo `app.module.ts`.
 1. Agregue la siguiente declaración de `import`
@@ -228,6 +228,6 @@ para incluir una redirección, así como una ruta comodín para mostrar una pág
 
 Para obtener más información sobre el enrutamiento, consulte los siguientes temas:
 
-- [Enrutamiento y navegación en la aplicación](/guía/enrutador)
-- [API de enrutador](/api/enrutador)
+- [Enrutamiento y navegación en la aplicación](/guide/router)
+- [API de enrutador](/api/ruoter)
 
