@@ -49,13 +49,16 @@ Esta aplicación tendra dos componentes:
    - Despues de esperar un momento, el proyecto nuevo _angular-router-sample_ estará listo.
 
 1. Desde su Terminal ingrese al directorio previamente creado, usando el siguiente comando:
-   `cd angular-router-sample`
+
+   <code-example language="sh">
+   cd angular-router-sample
+   </code-example>
 
 1. Ya estando al interior de `cd angular-router-sample`, crea el primer componente _crisis-list_ usando el siguiente comando:
 
- <code-example language="sh">
- ng generate component crisis-list
-</code-example>
+   <code-example language="sh">
+   ng generate component crisis-list
+   </code-example>
 
 1. En tu editor de código localiza el archivo con el nombre `crisis-list.component.html` y remplaza el contenido de _placeholder_ con la siguiente linea de HTML:
 
@@ -63,9 +66,9 @@ Esta aplicación tendra dos componentes:
 
 1. Crea el segundo componente _heroes-list_ usando el siguiente comando:
 
- <code-example language="sh">
- ng generate component heroes-list
-</code-example>
+   <code-example language="sh">
+   ng generate component heroes-list
+   </code-example>
 
 1. En tu editor de código localiza el archivo llamado `heroes-list.component.html` y remplaza el contenido de _placeholder_ con la siguiente linea de HTML:
 
@@ -77,9 +80,9 @@ Esta aplicación tendra dos componentes:
 
 1. Verifica que al ejecutar el siguiente comando `ng serve` en la terminal, la aplicación se ejecute adecuadamente.
 
-<code-example language="sh">
+   <code-example language="sh">
    ng serve
-  </code-example>
+   </code-example>
 
 1. Ahora abre el navegador en `http://localhost:4200`.
    Deberías ver una sola página web, que consta de un título y el HTML de sus dos componentes.
@@ -88,7 +91,7 @@ Esta aplicación tendra dos componentes:
 
 El enrutamiento le permite mostrar vistas específicas de su aplicación según la ruta de la URL.
 Para agregar esta funcionalidad a su aplicación de ejemplo, necesita actualizar el archivo `app.module.ts` para usar el módulo,` RouterModule`.
-Importa este módulo desde `@angular/enrutador`.
+Importa este módulo desde `@angular/router`.
 
 1. Desde su editor de código, abra el archivo `app.module.ts`.
 1. Agregue la siguiente declaración de `import`
@@ -176,7 +179,7 @@ En este paso del tutorial, agregas una ruta que redirige al usuario para que mue
 
 1. Desde su editor de código, abra el archivo `app.module.ts`.
 
-1. En el Array de `imports` actualice la sección` RouterModule` de la siguiente manera:
+1. En el Array de `imports` actualice la sección `RouterModule` de la siguiente manera:
 
    <code-example header="src/app/app.module.ts" path="router-tutorial/src/app/app.module.ts" region="import-redirect"></code-example>
 
@@ -228,5 +231,5 @@ para incluir una redirección, así como una ruta comodín para mostrar una pág
 
 Para obtener más información sobre el enrutamiento, consulte los siguientes temas:
 
-- [Enrutamiento y navegación en la aplicación](/guía/enrutador)
-- [API de enrutador](/api/enrutador)
+- [Enrutamiento y navegación en la aplicación](/guide/router)
+- [API de enrutador](/api/router)
