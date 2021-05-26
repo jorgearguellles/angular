@@ -106,15 +106,15 @@ Una definición de ruta es un objeto JavaScript. Cada ruta tiene normalmente dos
 
    <code-example header="src/app/app.module.ts" path="router-tutorial/src/app/app.module.ts" region="import-basic"></code-example>
 
-El fragmento de código anterior añade `RouterModules` al Array de `imports`. A continuación, el código usa el método `forRoot()` del `RouterModule` para definir tus dos rutas. Este método toma un Array de objetos JavaScript, con cada objeto definiendo las propiedades de una ruta. El método `forRoot()` asegura que su aplicación solo instancia un `RouterModule`. Para obtener más información, consulte [Singleton Services](/guide/singleton-services#forroot-and-the-router).
+El fragmento de código anterior añade `RouterModules` al arreglo de `imports`. A continuación, el código usa el método `forRoot()` del `RouterModule` para definir tus dos rutas. Este método toma un arreglo de objetos JavaScript, con cada objeto definiendo las propiedades de una ruta. El método `forRoot()` asegura que tu aplicación solo instancia un `RouterModule`. Para obtener más información consulta [Singleton Services](/guide/singleton-services#forroot-and-the-router).
 
 ## Actualiza tu componente con `router-outlet`
 
-Hasta este punto, has definido dos rutas para la aplicación. Sin embargo, la aplicación todavía tiene los componentes `crisis-center` y `heroes-list` codificados en su plantilla `app.component.html`. Para que sus rutas funcionen, necesita actualizar su plantilla para cargar dinámicamente un componente basado en la ruta URL.
+Hasta este punto, has definido dos rutas para la aplicación. Sin embargo, la aplicación todavía tiene los componentes `crisis-center` y `heroes-list` codificados en su plantilla `app.component.html`. Para que tus rutas funcionen, necesita actualizar tu plantilla para cargar dinámicamente un componente basado en la ruta URL.
 
-Para implementar esta funcionalidad, agregue la directiva `router-outlet` a su archivo de plantilla de acuerdo a los siguientes pasos:
+Para implementar esta funcionalidad, agregua la directiva `router-outlet` a tu archivo de plantilla de acuerdo a los siguientes pasos:
 
-1.  Desde su editor de código abra el archivo `app.component.html`.
+1.  Desde tu editor de código abre el archivo `app.component.html`.
 1.  Elimina las siguientes líneas de código:
 
     <code-example header="src/app/app.component.html" path="router-tutorial/src/app/app.component.html" region="components"></code-example>
