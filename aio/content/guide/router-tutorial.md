@@ -8,7 +8,7 @@ A medida que los usuarios acceden a las funcionalidades de tu aplicación, el na
 Utiliza las rutas para definir la manera en la que los usuarios navegan a través de tu aplicación.
 Puedes agregar rutas para definir cómo los usuarios navegan en tu aplicación de una parte a otra. También puedes configurar rutas para protegerte contra comportamientos inesperados o no autorizados.
 
-Para ver en funcionamiento una aplicación de ejemplo basado en este tutorial puede consultar: <live-example></live-example>.
+Para ver en funcionamiento una aplicación de ejemplo basado en este tutorial puedes consultar: <live-example></live-example>.
 
 ## Objetivos
 
@@ -28,7 +28,7 @@ Para ver en funcionamiento una aplicación de ejemplo basado en este tutorial pu
 - JavaScript
 - [Angular CLI](/cli)
 
-Puede que te sea util el [tutorial de Tour of Heroes](/tutorial), pero es opcional.
+Puede que te sea útil el [tutorial de Tour de Héroes](/tutorial), pero es opcional.
 
 ## Pasos para crear una aplicación de ejemplo
 
@@ -83,8 +83,8 @@ Esta aplicación tendrá dos componentes:
 
 ## Pasos para importar `RouterModule` from `@angular/router`
 
-El enrutamiento le permite mostrar vistas específicas de su aplicación según la ruta de la URL.
-Para agregar esta funcionalidad a tu aplicación de ejemplo, necesitas actualizar el archivo `app.module.ts` para usar el módulo,` RouterModule`.
+El enrutamiento te permite mostrar vistas específicas de su aplicación según la ruta de la URL.
+Para agregar esta funcionalidad a tu aplicación de ejemplo, necesitas actualizar el archivo `app.module.ts` para usar el módulo ` RouterModule`.
 Importa este módulo desde `@angular/router`.
 
 1. Desde tu editor de código, abre el archivo `app.module.ts`.
@@ -98,11 +98,11 @@ En esta sección definirás dos rutas:
 - La ruta `/crisis-center` que direcionará hacia el componente `crisis-center`.
 - La ruta `/heroes-list` que direcionará hacia el componente `heroes-list`.
 
-Una definición de ruta es un objeto JavaScript. Cada ruta tiene normalmente dos propiedades. La primera propiedad es `path` qué es una cadena de caracteres que especifica la ruta URL de la ruta. La segunda propiedad es `component` qué es una cadena de caracteres que especifica el componente que debe mostrar su aplicación para esa ruta.
+Una definición de ruta es un objeto JavaScript. Cada ruta tiene normalmente dos propiedades. La primera propiedad es `path` que es una cadena de caracteres que especifica la ruta URL de la ruta. La segunda propiedad es `component` que es una cadena de caracteres que especifica el componente que debe mostrar su aplicación para esa ruta.
 
 1. Desde tu editor de código abre el archivo `app.modules.ts`
 1. Localiza la sección de `@NgModule()`
-1. Estando en la sección de `@NgModule()` remplaza el Array de `imports` con las siguientes lineas de código:
+1. Estando en la sección de `@NgModule()` remplaza el arreglo de `imports` con las siguientes líneas de código:
 
    <code-example header="src/app/app.module.ts" path="router-tutorial/src/app/app.module.ts" region="import-basic"></code-example>
 
